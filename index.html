@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Испытание: формы — вспомнить всё</title>
+       <meta charset="utf-8">
+	   <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="/echo" method="post">
+			<label for=name>Имя</label>
+			<input type=text name=name id=name><br>
+			
+			<div class="half-width">
+				<label for=date>Дата рождения</label>
+				<input type=text name=date class=date id=date>
+			</div>
+			<div class="half-width">
+				<label for=color>Цвет</label>
+				<select id=color name=color>
+				    <option value=ginger>Рыжий</option>
+				    <option value=white>Белый</option>
+				    <option value=black>Чёрный</option>
+				    <option value=blue>Синий</option>
+				    <!-- По желанию нужное подчеркнуть,
+				    недостающее вписать -->
+				</select>
+			</div>
+			
+			<label>
+			<input type=checkbox name=razreshat>
+			Разрешать гладить</label>
+			<label for=secret>Секретное блюдо</label>
+			<input type=password id=secret name=password>
+			<div class="buttons">
+			<input type=submit value=Сохранить>
+			</div>
+		</form>
+    </body>
+</html>
